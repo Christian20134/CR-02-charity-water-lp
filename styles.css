@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Proxima Nova', 'Avenir', sans-serif;
   background-color: #ffffff;
   color: #1f1f1f;
 }
@@ -38,7 +38,8 @@ header {
 
 .donate-button {
   padding: 10px 20px;
-  background-color: #dde6f1;
+  background-color: #2E9DF7; /* Primary Blue */
+  color: white;
   border: none;
   border-radius: 8px;
   font-weight: bold;
@@ -62,8 +63,8 @@ header {
   font-size: 36px;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #ffffff;
-  background-color: #1a1f3f;
+  color: white;
+  background-color: #159A48; /* Dark Green */
   padding: 20px;
   border-radius: 10px;
 }
@@ -87,12 +88,13 @@ header {
 }
 
 .email-form button {
-  background-color: #fdd835;
+  background-color: #FFC907; /* Primary Yellow */
   border: none;
   padding: 12px 20px;
   border-radius: 8px;
   font-weight: bold;
   cursor: pointer;
+  color: black;
 }
 
 .info-cards {
