@@ -1,158 +1,238 @@
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: 'Proxima Nova', 'Avenir', sans-serif;
+  margin: 0;
+  font-family: 'Avenir', 'Proxima Nova', sans-serif;
   background-color: #ffffff;
-  color: #1f1f1f;
-  line-height: 1.6;
+  color: #ffffff;
 }
 
-header {
-  padding: 20px;
-  background-color: #ffffff;
-  border-bottom: 1px solid #e5e5e5;
+.white-nav-bar {
+  background-color: white;
+  padding: 20px 4vw;
 }
 
-.nav-container {
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
-  padding: 0 20px;
+  color: #1C1F3F;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-weight: bold;
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-weight: bold;
-  font-size: 20px;
+  width: 48px;
 }
 
-.logo img {
-  width: 30px;
-}
-
-.donate-button {
-  padding: 10px 20px;
+.donate-btn {
   background-color: #2E9DF7;
-  color: white;
+  color: #ffffff;
+  padding: 10px 20px;
   border: none;
   border-radius: 8px;
   font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  font-size: clamp(0.9rem, 1vw, 1rem);
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.donate-button:hover {
-  background-color: #1c7dc0;
+.donate-btn:hover {
+  background-color: #2083d5;
+  transform: scale(1.05);
 }
 
-.hero {
+.background-panel {
+  background-color: #1C1F3F;
+  padding: 4vw;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+}
+
+.main {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
-  padding: 60px 20px;
-  max-width: 1200px;
-  margin: auto;
-  gap: 30px;
+  gap: 40px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
-.hero-left {
-  flex: 1 1 500px;
+.main-left {
+  flex: 1 1 50%;
+  min-width: 300px;
+  animation: fadeInLeft 1s ease-in;
 }
 
-.hero-left h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
+.main-right {
+  flex: 1 1 40%;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeInRight 1s ease-in;
+}
+
+.main-left h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
   margin-bottom: 20px;
-  color: white;
-  background-color: #4FCB53;
-  padding: 20px;
-  border-radius: 10px;
+  line-height: 1.2;
+  color: #ffffff;
 }
 
-.hero-left p {
+.description {
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  color: #e0e6f0;
   margin-bottom: 20px;
-  color: #444;
 }
 
 .email-form {
   display: flex;
-  flex-wrap: wrap;
   gap: 10px;
   margin-bottom: 30px;
+  flex-wrap: wrap;
 }
 
 .email-form input {
   flex: 1 1 250px;
-  padding: 12px;
-  border: 2px solid #ccc;
-  border-radius: 8px;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #E5E7EB;
+  color: #000000;
 }
 
 .email-form button {
   background-color: #FFC907;
+  color: #000;
   border: none;
-  padding: 12px 20px;
-  border-radius: 8px;
+  padding: 14px 20px;
+  border-radius: 6px;
   font-weight: bold;
   cursor: pointer;
-  color: black;
-  transition: transform 0.2s ease;
+  font-size: clamp(0.9rem, 1vw, 1rem);
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .email-form button:hover {
+  background-color: #e6b800;
   transform: scale(1.05);
 }
 
-.info-cards {
+.info-boxes {
   display: flex;
-  flex-wrap: wrap;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
-.card {
-  background-color: #f5f5f5;
+.info-box {
+  background-color: #ffffff;
+  color: #000000;
   padding: 20px;
-  flex: 1 1 250px;
-  border-radius: 12px;
+  border-radius: 10px;
+  flex: 1 1 260px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  font-size: clamp(0.9rem, 1vw, 1rem);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card img {
-  width: 24px;
-  margin-bottom: 10px;
+.info-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
-.hero-right {
-  flex: 1 1 300px;
+.info-box img {
+  width: 36px;
+  height: auto;
+  margin-bottom: 12px;
 }
 
-.hero-right img {
+.main-right img {
   max-width: 100%;
-  border-radius: 12px;
+  height: auto;
+  border-radius: 10px;
 }
 
-/* Responsive tweaks */
+.hero-story {
+  background-color: #ffffff;
+  color: #1C1F3F;
+  padding: 60px 4vw;
+  text-align: center;
+  animation: fadeInUp 1s ease-in;
+}
+
+.hero-story h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.hero-story p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 30px;
+}
+
+.hero-story img {
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media (max-width: 768px) {
-  .hero {
+  .main {
     flex-direction: column;
-    align-items: center;
   }
 
-  .hero-left, .hero-right {
-    flex: 1 1 100%;
+  .main-left h1 {
+    font-size: 2rem;
   }
 
-  .nav-container {
+  .email-form {
     flex-direction: column;
-    gap: 10px;
+  }
+
+  .email-form button {
+    width: 100%;
   }
 }

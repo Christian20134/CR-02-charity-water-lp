@@ -1,48 +1,62 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Charity:Water Landing Page</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charity:Water</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <div class="nav-container">
-      <div class="logo">
-        <img src="img/cw_logo.png" alt="Charity Water Logo" />
+
+  <!-- Top White Nav Bar -->
+  <div class="white-nav-bar">
+    <header class="nav">
+      <div class="nav-left">
+        <img src="img/cw_logo.png" alt="Logo" class="logo">
         <span>Charity:Water</span>
       </div>
-      <button class="donate-button">Donate Now</button>
-    </div>
-  </header>
+      <button class="donate-btn">Donate Now</button>
+    </header>
+  </div>
 
-  <main class="hero">
-    <div class="hero-left">
-      <h1>You Give. They Drink. You See It Happen.</h1>
-      <p>Every dollar you give funds clean water — and you’ll get updates showing exactly where and how your donation changed a life.</p>
-
-      <form class="email-form">
-        <input type="email" placeholder="Insert Email Address:" required />
-        <button type="submit">Stay in the Loop!</button>
-      </form>
-
-      <div class="info-cards">
-        <div class="card">
-          <img src="img/water-can-transparent.png" alt="icon" />
-          <p><strong>How It Works</strong><br>1. You donate<br>2. We build Clean water projects<br>3. you get proof with GPS + updates</p>
+  <!-- Hero Panel -->
+  <div class="background-panel">
+    <main class="main">
+      <section class="main-left">
+        <h1>You Give. They Drink. You See It Happen.</h1>
+        <p class="description">
+          Every dollar you give funds clean water — and you’ll get updates showing exactly where and how your donation changed a life.
+        </p>
+        <form class="email-form">
+          <input type="email" placeholder="Insert Email Address:" required>
+          <button type="submit">Stay in the Loop!</button>
+        </form>
+        <div class="info-boxes">
+          <div class="info-box">
+            <img src="img/water-can-transparent.png" alt="icon">
+            <p><strong>How It Works</strong><br>1. You donate<br>2. We build Clean water projects<br>3. you get proof with GPS + updates</p>
+          </div>
+          <div class="info-box">
+            <img src="img/water-can-transparent.png" alt="icon">
+            <p><strong>Your Donation Matters. Heres why:</strong><br>20,285,007 people served<br>184,104 Clean water projects<br>29 Countries</p>
+          </div>
         </div>
-        <div class="card">
-          <img src="img/water-can-transparent.png" alt="icon" />
-          <p><strong>Your Donation Matters. Here's why:</strong><br>20,285,007 people served<br>184,104 Clean water projects<br>29 Countries</p>
-        </div>
-      </div>
-    </div>
+      </section>
+      <section class="main-right">
+        <img src="img/hero.png" alt="Smiling child holding water">
+      </section>
+    </main>
+  </div>
 
-    <div class="hero-right">
-      <img src="img/hero.jpg" alt="Smiling child holding water" />
-    </div>
-  </main>
+  <!-- Hero Story Section -->
+  <section class="hero-story">
+    <h2>Real Stories. Real Impact.</h2>
+    <p>
+      In a small village in Uganda, Sarah no longer walks hours for water. Thanks to your support,
+      her community now has clean, safe drinking water — and Sarah has time to study and thrive.
+    </p>
+    <img src="img/hero-story.jpg" alt="Sarah holding water with friends">
+  </section>
+
 </body>
 </html>
